@@ -1,5 +1,7 @@
 ok-button {
   /* Component styles go here */
+  display: flex;
+  width: fit-content;
   position: relative;
   overflow: hidden;
   border-width: 1px solid #000;

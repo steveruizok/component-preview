@@ -1,19 +1,19 @@
 import { TestWindow } from '@stencil/core/testing';
-import { OkPreviewBook } from './ok-preview-book';
+import { CpStory } from './cp-story';
 
-describe('ok-preview-book', () => {
+describe('cp-story', () => {
   it('should build', () => {
-    expect(new OkPreviewBook()).toBeTruthy();
+    expect(new CpStory()).toBeTruthy();
   });
 
   describe('rendering', () => {
-    let element: HTMLOkPreviewBookElement;
+    let element: HTMLCpStoryElement;
     let testWindow: TestWindow;
     beforeEach(async () => {
       testWindow = new TestWindow();
       element = await testWindow.load({
-        components: [OkPreviewBook],
-        html: '<ok-preview-book></ok-preview-book>'
+        components: [CpStory],
+        html: '<cp-story></cp-story>'
       });
     });
 

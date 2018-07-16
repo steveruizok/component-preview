@@ -26,39 +26,35 @@ declare global {
 }
 
 import '@stencil/router';
-import '@stencil/state-tunnel';
 
-import {
-  MatchResults,
-} from '@stencil/router';
 
 declare global {
 
   namespace StencilComponents {
-    interface AppHome {
+    interface CpMain {
 
     }
   }
 
-  interface HTMLAppHomeElement extends StencilComponents.AppHome, HTMLStencilElement {}
+  interface HTMLCpMainElement extends StencilComponents.CpMain, HTMLStencilElement {}
 
-  var HTMLAppHomeElement: {
-    prototype: HTMLAppHomeElement;
-    new (): HTMLAppHomeElement;
+  var HTMLCpMainElement: {
+    prototype: HTMLCpMainElement;
+    new (): HTMLCpMainElement;
   };
   interface HTMLElementTagNameMap {
-    'app-home': HTMLAppHomeElement;
+    'cp-main': HTMLCpMainElement;
   }
   interface ElementTagNameMap {
-    'app-home': HTMLAppHomeElement;
+    'cp-main': HTMLCpMainElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      'app-home': JSXElements.AppHomeAttributes;
+      'cp-main': JSXElements.CpMainAttributes;
     }
   }
   namespace JSXElements {
-    export interface AppHomeAttributes extends HTMLAttributes {
+    export interface CpMainAttributes extends HTMLAttributes {
 
     }
   }
@@ -68,31 +64,31 @@ declare global {
 declare global {
 
   namespace StencilComponents {
-    interface AppProfile {
-      'match': MatchResults;
+    interface CpStories {
+      'stories': Object;
     }
   }
 
-  interface HTMLAppProfileElement extends StencilComponents.AppProfile, HTMLStencilElement {}
+  interface HTMLCpStoriesElement extends StencilComponents.CpStories, HTMLStencilElement {}
 
-  var HTMLAppProfileElement: {
-    prototype: HTMLAppProfileElement;
-    new (): HTMLAppProfileElement;
+  var HTMLCpStoriesElement: {
+    prototype: HTMLCpStoriesElement;
+    new (): HTMLCpStoriesElement;
   };
   interface HTMLElementTagNameMap {
-    'app-profile': HTMLAppProfileElement;
+    'cp-stories': HTMLCpStoriesElement;
   }
   interface ElementTagNameMap {
-    'app-profile': HTMLAppProfileElement;
+    'cp-stories': HTMLCpStoriesElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      'app-profile': JSXElements.AppProfileAttributes;
+      'cp-stories': JSXElements.CpStoriesAttributes;
     }
   }
   namespace JSXElements {
-    export interface AppProfileAttributes extends HTMLAttributes {
-      'match'?: MatchResults;
+    export interface CpStoriesAttributes extends HTMLAttributes {
+      'stories'?: Object;
     }
   }
 }
@@ -101,31 +97,31 @@ declare global {
 declare global {
 
   namespace StencilComponents {
-    interface AppRoot {
-
+    interface CpStory {
+      'story': Function;
     }
   }
 
-  interface HTMLAppRootElement extends StencilComponents.AppRoot, HTMLStencilElement {}
+  interface HTMLCpStoryElement extends StencilComponents.CpStory, HTMLStencilElement {}
 
-  var HTMLAppRootElement: {
-    prototype: HTMLAppRootElement;
-    new (): HTMLAppRootElement;
+  var HTMLCpStoryElement: {
+    prototype: HTMLCpStoryElement;
+    new (): HTMLCpStoryElement;
   };
   interface HTMLElementTagNameMap {
-    'app-root': HTMLAppRootElement;
+    'cp-story': HTMLCpStoryElement;
   }
   interface ElementTagNameMap {
-    'app-root': HTMLAppRootElement;
+    'cp-story': HTMLCpStoryElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      'app-root': JSXElements.AppRootAttributes;
+      'cp-story': JSXElements.CpStoryAttributes;
     }
   }
   namespace JSXElements {
-    export interface AppRootAttributes extends HTMLAttributes {
-
+    export interface CpStoryAttributes extends HTMLAttributes {
+      'story'?: Function;
     }
   }
 }
@@ -165,84 +161,6 @@ declare global {
       'flag'?: string;
       'ghost'?: boolean;
       'label'?: string;
-    }
-  }
-}
-
-
-declare global {
-
-  namespace StencilComponents {
-    interface OkPreviewBook {
-      'components': {
-    tag: string;
-    knobs?: Object;
-    notes?: string;
-  }[];
-    }
-  }
-
-  interface HTMLOkPreviewBookElement extends StencilComponents.OkPreviewBook, HTMLStencilElement {}
-
-  var HTMLOkPreviewBookElement: {
-    prototype: HTMLOkPreviewBookElement;
-    new (): HTMLOkPreviewBookElement;
-  };
-  interface HTMLElementTagNameMap {
-    'ok-preview-book': HTMLOkPreviewBookElement;
-  }
-  interface ElementTagNameMap {
-    'ok-preview-book': HTMLOkPreviewBookElement;
-  }
-  namespace JSX {
-    interface IntrinsicElements {
-      'ok-preview-book': JSXElements.OkPreviewBookAttributes;
-    }
-  }
-  namespace JSXElements {
-    export interface OkPreviewBookAttributes extends HTMLAttributes {
-      'components'?: {
-    tag: string;
-    knobs?: Object;
-    notes?: string;
-  }[];
-    }
-  }
-}
-
-
-declare global {
-
-  namespace StencilComponents {
-    interface OkPreview {
-      'knobs': Object;
-      'notes': Object;
-      'tag': string;
-    }
-  }
-
-  interface HTMLOkPreviewElement extends StencilComponents.OkPreview, HTMLStencilElement {}
-
-  var HTMLOkPreviewElement: {
-    prototype: HTMLOkPreviewElement;
-    new (): HTMLOkPreviewElement;
-  };
-  interface HTMLElementTagNameMap {
-    'ok-preview': HTMLOkPreviewElement;
-  }
-  interface ElementTagNameMap {
-    'ok-preview': HTMLOkPreviewElement;
-  }
-  namespace JSX {
-    interface IntrinsicElements {
-      'ok-preview': JSXElements.OkPreviewAttributes;
-    }
-  }
-  namespace JSXElements {
-    export interface OkPreviewAttributes extends HTMLAttributes {
-      'knobs'?: Object;
-      'notes'?: Object;
-      'tag'?: string;
     }
   }
 }

@@ -1,19 +1,19 @@
 import { TestWindow } from '@stencil/core/testing';
-import { OkPreview } from './ok-preview';
+import { CpMain } from './cp-main';
 
-describe('ok-preview', () => {
+describe('cp-main', () => {
   it('should build', () => {
-    expect(new OkPreview()).toBeTruthy();
+    expect(new CpMain()).toBeTruthy();
   });
 
   describe('rendering', () => {
-    let element: HTMLOkPreviewElement;
+    let element: HTMLCpMainElement;
     let testWindow: TestWindow;
     beforeEach(async () => {
       testWindow = new TestWindow();
       element = await testWindow.load({
-        components: [OkPreview],
-        html: '<ok-preview></ok-preview>'
+        components: [CpMain],
+        html: '<cp-main></cp-main>'
       });
     });
 

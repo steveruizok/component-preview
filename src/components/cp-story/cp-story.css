@@ -1,24 +1,19 @@
-ok-preview {
-  /* Component styles go here */
+cp-story {
   display: grid;
-  grid-template-rows: auto min-content auto;
-  width: fit-content;
-  margin: 32px;
+  grid-template-rows: min-content min-content auto;
   border: 1px solid #ccc;
   resize: both;
   overflow: auto;
   background: none;
 }
 
-ok-preview .preview-container {
-  display: flex;
-  padding: 32px;
+cp-story .preview {
+  grid-row: 1;
+  display: grid;
+  padding: 32px 0;
   align-items: center;
   justify-content: center;
   background: #fff;
-}
-
-.preview-component {
 }
 
 .knobs {
@@ -31,15 +26,14 @@ ok-preview .preview-container {
   border-top: 1px solid #ccc;
 }
 
-.knob-label {
-  display: block;
+.label {
   align-self: center;
-  grid-column: 1;
   font-size: 12px;
   letter-spacing: 1px;
   color: #333;
   text-transform: uppercase;
   margin-bottom: 4px;
+  min-width: 12px;
 }
 
 .knob-checkbox {
@@ -59,6 +53,19 @@ ok-preview .preview-container {
   border-bottom: 1px solid #3b99fc;
 }
 
+.knob-range {
+  display: flex;
+  width: 100%;
+  grid-column: 2;
+  outline: none;
+  justify-content: space-between;
+}
+
+.knob-range input {
+  width: 100%;
+  margin-right: 8px;
+}
+
 .knob-select {
   grid-column: 2;
   width: 100%;
@@ -72,4 +79,8 @@ ok-preview .preview-container {
   padding: 16px;
   border-top: 1px solid #ccc;
   font-size: 14px;
+}
+
+.align-right {
+  text-align: right;
 }
